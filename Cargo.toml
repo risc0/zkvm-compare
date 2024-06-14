@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "common",
+    "bench",
+    "guest-r0",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+anyhow = { version = "1.0.75" }
+clap = { version = "4.0", features = ["derive"] }
+common = { path = "common" }
+guest-r0 = { path = "guest-r0" }
+serde = { version = "1.0", features = ["derive"] }
