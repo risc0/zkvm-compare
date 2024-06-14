@@ -1,0 +1,9 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "guest-sp1"
+edition = "2021"
+
+[dependencies]
+common = { path = "../common", features = ["sp1"] }
+sp1-zkvm = { git = "https://github.com/succinctlabs/sp1", rev = "ffe408a" }
